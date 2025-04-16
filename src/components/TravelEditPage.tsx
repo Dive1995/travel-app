@@ -3,9 +3,10 @@ import TravelEditMap from "./TravelEditMap";
 
 function TravelEditPage() {
   return (
-    <div className="md:grid grid-cols-3">
+    <div className="max-w-7xl mx-auto">
+      {/* md:grid grid-cols-3 */}
       <TravelEditContent />
-      <TravelEditMap />
+      {/* <TravelEditMap /> */}
     </div>
   );
 }

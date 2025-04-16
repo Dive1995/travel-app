@@ -1,17 +1,16 @@
-// TripModel.ts
-
 export interface Trip {
   title: string;
   startDate: string; // ISO format recommended: YYYY-MM-DD
   endDate: string;
+  coverPhoto?: string;
   note?: string;
   budget: Budget;
-  accommodations: Accommodation[];
-  restaurants: Restaurant[];
+  accommodations?: Accommodation[];
+  restaurants?: Restaurant[];
   itinerary: ItineraryDay[];
-  transportation: Transportation[];
-  companions: Companion[];
-  checklist: ChecklistItem[];
+  transportation?: Transportation[];
+  companions?: Companion[];
+  checklist?: ChecklistItem[];
 }
 
 export interface Budget {
